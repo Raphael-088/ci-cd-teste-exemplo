@@ -16,8 +16,8 @@ jobs:
       with:
         node-version: 18
         cache: 'npm'
-      name: Instalar Dependencias
-    - run: npm install
+    - name: Instalar Dependencias
+      run: npm install
 
-      name: Executar testes
-    - run: npx teste
+    - name: Executar testes
+      run: npm test
